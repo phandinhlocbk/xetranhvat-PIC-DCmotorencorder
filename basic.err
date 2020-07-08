@@ -1,0 +1,7 @@
+>>> Warning 216 "basic.c" Line 430(0,1): Interrupts disabled during call to prevent re-entrancy:  (@MULFF)
+>>> Warning 216 "basic.c" Line 430(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIVFF)
+>>> Warning 216 "basic.c" Line 430(0,1): Interrupts disabled during call to prevent re-entrancy:  (@ITOF)
+>>> Warning 216 "basic.c" Line 430(0,1): Interrupts disabled during call to prevent re-entrancy:  (@ADDFF)
+>>> Warning 202 "basic.c" Line 22(5,8): Variable never used:   rs232_errors
+      Memory usage:   ROM=33%      RAM=10% - 17%
+      0 Errors,  5 Warnings.

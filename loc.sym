@@ -1,0 +1,294 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017-018 strtok.save
+019-01C _Randseed
+01D     rs232_errors
+01E-021 num_pulse_right
+022-025 count_left
+026-029 num_pulse_left
+02A-02D x_cur
+02E-031 y_cur
+032-035 x_cur_old
+036-039 y_cur_old
+03A     huong
+03B.0   done_Timer1
+03B.1   hoanthanhpid
+03B.2   copid_right
+03B.3   copid_left
+03B.4   codoctinhieu
+03B.5   donePID
+03C-03D pw_duty_left
+03E-03F pw_duty_right
+040-043 position_right
+044-047 position_set_right
+048-04B position_left
+04C-04F position_set_left
+050-053 value
+054-057 value_cmd
+058-05B anpha
+05C-05F angle_current
+060-063 Kp_r
+064-067 Kd_r
+068-06B Ki_r
+06C-06F Kp_l
+070-073 Kd_l
+074-077 Ki_l
+078-07B e_sum_r
+07C-07F e_del_r
+080-083 e1_r
+084-087 e2_r
+088-08B e_sum_l
+08C-08F e_del_l
+090-093 e1_l
+094-097 e2_l
+098     ss
+099-0CA data_receive
+0CB     index
+0CC     dichuyen.huong_move
+0CC-0CF @DTOF.P1
+0CC-0CD pid_left.temp_kp
+0CC-0CD pid_right.temp_kp
+0CC     pid_robot.@SCRATCH1
+0CD-0D0 dichuyen.value
+0CD     pid_robot.@SCRATCH2
+0CE-0CF pid_right.temp_ki
+0CE-0CF pid_left.temp_ki
+0CE     pid_robot.@SCRATCH3
+0CF     pid_robot.@SCRATCH4
+0D0-0D1 pid_right.temp_kd
+0D0-0D3 xy_vitri.khoangcach
+0D0-0D1 pid_left.temp_kd
+0D1     dichuyen.@SCRATCH1
+0D2-0D3 pid_right.pw_duty_Right_Temp
+0D2-0D3 pid_left.pw_duty_Left_Temp
+0D2     dichuyen.@SCRATCH2
+0D3     dichuyen.@SCRATCH3
+0D4-0D7 @SDTOF.P1
+0D4     pid_right.@SCRATCH1
+0D4     pid_left.@SCRATCH1
+0D4     dichuyen.@SCRATCH4
+0D4     xy_vitri.@SCRATCH1
+0D5     pid_right.@SCRATCH2
+0D5     pid_left.@SCRATCH2
+0D5     xy_vitri.@SCRATCH2
+0D6     xy_vitri.@SCRATCH3
+0D7     xy_vitri.@SCRATCH4
+0D8-0DB sin.x
+0D8     @SDTOF.@SCRATCH1
+0DC     sin.@SCRATCH1
+0DD     sin.@SCRATCH2
+0DE     sin.@SCRATCH3
+0DF     sin.@SCRATCH4
+0E0-0E3 cos.x
+0E4-0E7 cos.y
+0E8-0EB cos.t
+0EC-0EF cos.t2
+0F0     cos.quad
+0F1     cos.i
+0F2-0F5 cos.frac
+0F6-10D cos.p
+10E-111 @FLT.P1
+10E-111 @SFTOI.P2
+10E     cos.@SCRATCH1
+10F     cos.@SCRATCH2
+110     cos.@SCRATCH3
+111     cos.@SCRATCH4
+112-115 @FLT.P1
+116     @FLT.@SCRATCH1
+117     @FLT.@SCRATCH2
+122-135 RDA_isr.value
+122     EXT1_isr.@SCRATCH1
+122     EXT2_isr.@SCRATCH1
+136-137 strtof.s
+136-139 @PRINTF_L32D_38400_31766_31767FPFPF.P1
+136-137 strlen.s
+136     RDA_isr.@SCRATCH1
+137-138 strncpy.s1
+137     RDA_isr.@SCRATCH2
+138-139 strtof.endptr
+138-139 strlen.sc
+138     RDA_isr.@SCRATCH3
+139-13A strncpy.s2
+139     RDA_isr.@SCRATCH4
+13A     @PRINTF_L32D_38400_31766_31767FPFPF.P1
+13A-13D strtof.pow10
+13A     strlen.@SCRATCH1
+13A     RDA_isr.@SCRATCH5
+13B     strncpy.n
+13B     RDA_isr.@SCRATCH6
+13B     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH1
+13C-13D strncpy.s
+13C     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH2
+13D     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH3
+13E-141 strtof.result
+13E     strncpy.@SCRATCH1
+13E     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH4
+13F     strncpy.@SCRATCH2
+13F     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH5
+140     strncpy.@SCRATCH3
+140     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH6
+141     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH7
+142.0   strtof.skip
+142.1   strtof.sign
+142.2   strtof.point
+142     @PRINTF_L32D_38400_31766_31767FPFPF.@SCRATCH8
+143     strtof.c
+143-146 @DIV3232.P1
+143-146 @FTOSD.P2
+144     strtof.ptr
+145-148 @MULFF.P1
+145     strtof.@SCRATCH1
+146     strtof.@SCRATCH2
+147-14A @DIV3232.P1
+147     strtof.@SCRATCH3
+147     @FTOSD.@SCRATCH1
+148     strtof.@SCRATCH4
+149-14C @ADDFF.P1
+149-14C @DIVFF.P2
+149-14A @ITOF.P3
+149-14C @MULFF.P4
+14B     @DIV3232.@SCRATCH1
+14C     @DIV3232.@SCRATCH2
+14D-150 @ADDFF.P1
+14D-150 @DIVFF.P2
+14D     @MULFF.@SCRATCH1
+14D     @DIV3232.@SCRATCH3
+14E     @MULFF.@SCRATCH2
+14E     @DIV3232.@SCRATCH4
+14F     @MULFF.@SCRATCH3
+14F     @DIV3232.@SCRATCH5
+151     @ADDFF.@SCRATCH1
+151     @DIVFF.@SCRATCH1
+152     @ADDFF.@SCRATCH2
+152     @DIVFF.@SCRATCH2
+153     @ADDFF.@SCRATCH3
+153     @DIVFF.@SCRATCH3
+154     @ADDFF.@SCRATCH4
+154     @DIVFF.@SCRATCH4
+155     @ADDFF.@SCRATCH5
+155     @DIVFF.@SCRATCH5
+156     @ADDFF.@SCRATCH6
+156     @DIVFF.@SCRATCH6
+157     @ADDFF.@SCRATCH7
+158     @ADDFF.@SCRATCH8
+F80     PORTA
+F81     PORTB
+F82     PORTC
+F82.1   RC1
+F82.2   RC2
+F83     PORTD
+F83     PSP_DATA
+F84     PORTE
+F84.0   RE0
+F84.2   RE2
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0118  strncpy
+00DC  strlen
+0198  @MULFF
+028E  @ITOF
+0422  @ADDFF
+02C4  @DIVFF
+069A  strtof
+1C70  @FLT
+1724  @SFTOI
+1CEA  cos
+211E  sin
+00D2  @PUTCHARI_BIU_1
+00BA  @GETCH_BIU_1
+0B50  RDA_isr
+08EA  @FTOSD
+092C  @DIV3232
+09AC  @PRINTF_L32D_38400_31766_31767FPFPF
+0C24  EXT1_isr
+0C64  EXT2_isr
+0CDC  TIMER1_isr
+2730  MAIN
+1760  pid_right
+16CE  @SDTOF
+19E8  pid_left
+0CEC  dichuyen
+2400  pid_robot
+23CC  @DTOF
+217A  xy_vitri
+2730  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\ken\Desktop\ken\CCS\
+
+Project Files:
+    loc.c
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\STDDEF.H
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\math.h
+
+Units:
+    C:\Users\ken\Desktop\ken\CCS\loc (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      loc.err
+    Ext Symbols: loc.esym
+    INHX32:      loc.hex
+    Symbols:     loc.sym
+    List:        loc.lst
+    Debug/COFF:  loc.cof
+    Project:     loc.PJT
+    Call Tree:   loc.tre
+    Statistics:  loc.sta

@@ -1,0 +1,3 @@
+*** Error 12 "loc.c" Line 312(18,19): Undefined identifier  -- intpid_right
+*** Error 12 "loc.c" Line 313(18,19): Undefined identifier  -- intpid_left
+      2 Errors,  0 Warnings.
